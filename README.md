@@ -10,7 +10,13 @@ This repository contains datasets related to **mosquito-borne diseases** (West N
 - **Global Temperature Data** (Our World in Data)  
   - [Monthly Average Surface Temperatures by Year](https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year?tab=table)  
 - **United States Temperature & Precipitation Data** (NOAA)  
-  - [Climate at a Glance - Historical Data](https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/time-series)  
+  - [Climate at a Glance - Historical Data](https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/time-series)
+  - **Updated Global Temp data to avg_temp per year instead of month for each country
+  - ** Code - SELECT [Country], [Year], AVG([Temp C (average)]) as Avg_Temp
+From[dbo].[Global_temp]
+GROUP By [Country], [Year]
+Order By [Country], [Year]
+  - 
 
 ---
 
